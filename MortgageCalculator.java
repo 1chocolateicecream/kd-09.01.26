@@ -25,7 +25,7 @@ public class MortgageCalculator {
     }
 
     // https://www.luminor.lv/lv/privatpersonam/hipotekara-kredita-kalkulators
-    public double calculate() {
+    public double calculate(int totalCreditSum, float yearlyPercentageRate2, int years2) {
         double monthlyMortgagePayment = this.credit * (getMonthlyRate() * getFutureValueInterestFactor()) / (getFutureValueInterestFactor() - 1);
         return Math.round(monthlyMortgagePayment * 100d) / 100d; // two digits after the decimal point
     }

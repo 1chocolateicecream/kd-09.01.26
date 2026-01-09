@@ -2,12 +2,18 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Console {
-    public static float readInput(String prompt) {
-        System.out.print(prompt);
-        return scanner.nextFloat();
-    }
+
+    static Scanner scanner = new Scanner(System.in);
+
+    // public static float readInput(String prompt) {
+        
+    // }
 
     public static float readInput(String prompt, int lowLimit, int highLimit) {
+         
+        System.out.print(prompt);
+        return scanner.nextFloat();
+
         while (true) {
             System.out.print(prompt);
 
