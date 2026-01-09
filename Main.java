@@ -18,10 +18,7 @@ public class Main {
 
             if (Console.readInputContinue("Vai vēlaties turpināt? Jā[1]/Nē[0]: ") == 0) {
                 break;
-            } else {
-                
             }
-            return;
         }
     }
 }

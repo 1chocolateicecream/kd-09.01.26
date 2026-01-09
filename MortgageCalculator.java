@@ -17,7 +17,7 @@ public class MortgageCalculator {
     }
 
     private float getMonthlyRate() {
-        return yearlyPercentageRate = PERCENT / MONTH_IN_YEAR;
+        return yearlyPercentageRate / PERCENT / MONTH_IN_YEAR;
     }
 
     private double getFutureValueInterestFactor() {
